@@ -1,0 +1,359 @@
+body::-webkit-scrollbar {
+  width: 3px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #2e2e2e;
+}
+body::-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 10px #FF0077;
+}
+.admin-overlay-active {
+  overflow: hidden;
+}
+.admin-overlay-active body {
+  overflow: hidden;
+}
+.admin-overlay-active .admin-panel-wrapper {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+  background-color: #121212; /* Основной фон */
+  color: #FFFFFF; /* Основной текст */
+}
+*{
+  border-radius: 15px;
+}
+.btnAdmin {
+  margin: 10px 10px 0px 0px ;
+  transition: 1s;
+}
+
+
+h1, h2 {
+  width: auto;
+  text-align: center;
+  color: #FF0077; /* Цвет акцента */
+}
+.status{
+  color: #FF0077;
+  transition: 1s;
+}
+form {
+  background-color: #212121; /* Цвет форм */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Цвет тени */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #757575; /* Цвет рамки */
+  border-radius: 3px;
+  background-color: #303030; /* Цвет поля ввода */
+  color: #FFFFFF; /* Основной текст */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #FF0077; /* Цвет кнопок */
+  color: #FFFFFF; /* Основной текст */
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #C1004F; /* Цвет кнопок при наведении */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #212121; /* Цвет элемента списка */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Цвет тени */
+}
+
+.admin-button {
+  margin-left: 10px;
+}
+li button {
+  margin: 0 10px 0px 10px;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.formInput form{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 560px;
+  
+}
+.formInput form input,textarea{
+  width: 95%;
+}
+.formInput form button{
+  margin-top: 10px;
+}
+
+.ListWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ListContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.List{
+  width: 600px;
+}
+.AdminPanel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.navigation{
+  width: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212121;
+  padding: 15px;
+}
+.logoImg{
+  width: 45px;
+  margin-right: 10px;
+}
+.navigation button{
+  margin: 0 10px 0px 10px;
+}
+
+.admin-overlay{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  background-color: #121212c2;
+}
+.admin-panel{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  top: 30%;
+  
+}
+.admin-panel-wrapper{
+  position: relative;
+  z-index: 1;
+  background-color: #121212;
+  width: 30%;
+  padding: 20px 20px 30px 20px;
+}
+.admin-panel input{
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #757575;
+  border-radius: 3px;
+  background-color: #303030;
+  color: #FFFFFF;
+}
+.admin-panel button{
+  margin-top: 10px;
+}
+.close-admin{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+.close-admin img{
+  cursor: pointer;
+  width: 24px;
+}
+.AdminPanel{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.AdminPanel .navigation{
+  width: 570px;
+}
+.AdminPanel .navigation .logo{
+  width: auto;
+}
+.AdminApp{
+  width: 100%;
+}
+.ListWrapper div{
+  width: 52%;
+}
+.ListAndInput{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 430px) {
+  .main{
+    width: 100%;
+  }
+  .navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+  }
+  .user-menu{
+    width: 50%;
+  }
+  .navigation .user-menu button{
+    margin: 2px;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+  }
+  .logoImg{
+    width: 70px;
+  }
+  .formInput form {
+    width: 90%;
+  }
+  .formInput{
+    width: 100%;
+  }
+  .btnAdmin {
+    margin: 10px 10px 0px 0px;
+  }
+  .ListWrapper{
+    width: 100%;
+  }
+  .ListWrapper div{
+    width: 100%;
+  } 
+  .List{
+    width: 100%;
+  }
+  .admin-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    inset: 0;
+    background-color: #121212c2;
+  }
+  .admin-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    top: 30%;
+  }
+  .admin-panel-wrapper {
+    position: relative;
+    z-index: 1;
+    background-color: #121212;
+    width: 80%;
+    padding: 20px;
+  }
+  .admin-panel input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #757575;
+    border-radius: 3px;
+    background-color: #303030;
+    color: #ffffff;
+  }
+  .admin-panel button {
+    margin-top: 10px;
+  }
+  .close-admin {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  .close-admin img {
+    cursor: pointer;
+    width: 24px;
+  }
+  .navigation button {
+    width: 180px;
+    font-size: 12px;
+    text-align: center;
+    margin: 0 2px 0px 2px;
+  }
+  .admin-panel h2{
+    margin: 0px 0px 10px 0px;
+  }
+  .admin-panel button{
+    width: 150px;
+  }
+  .AdminApp {
+    width: 100%;
+  }
+  .AdminPanel .navigation{
+    width: 100%;
+  }
+  .AdminApp .navigation .admin-overlay .admin-panel-wrapper{
+    padding: 1px;
+  }
+  .AdminPanel .close-admin{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .AdminPanel .admin-panel input {
+    width: 90%;
+  }
+  .AdminPanel .admin-panel-wrapper{
+    width: 80%;
+  }
+}
